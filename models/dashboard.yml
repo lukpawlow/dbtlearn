@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: dash_full_moon
+    label: Dashboard Full Moon
+    type: dashboard
+    maturity: low
+    url: https://26acc06d.us1a.app.preset.io/superset/dashboard/p/ENJy1nQVgRw/
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listing_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: lukpawlow
+      email: lukpawlow
